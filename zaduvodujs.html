@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment - Uvod u JS</title>
+</head>
+
+<body>
+
+    <div class="naslov" id="naslov">
+
+        <h1>Assignment - Uvod u JavaScript</h1>
+
+    </div>
+
+
+    <div class="mid" id="mid">
+
+        <p>Formula za racunanje povrsine kruga: P = 3,14 · r^2 </p>
+
+        <p>Molimo unesite poluprecnik kruga:
+
+            <form name="form1">
+                <input type="number" name="num1" min="0" required>
+                <button onClick="hnja()" type="button"> Izracunaj</button>
+                <p>Rezultat:
+                    <input type="text" name="rezultat" value=" ">
+                </p>
+            </form>
+        </p>
+    </div>
+
+
+    <script>
+        function hnja() {
+            var input = document.form1.num1.value;
+            var res = Math.PI * input * input;
+            document.form1.rezultat.value = res;
+
+        }
+    </script>
+
+
+</body>
+
+</html>
